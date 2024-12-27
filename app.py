@@ -11,7 +11,13 @@ FEATURES = ['store_nbr', 'family','month']
 
 # Load the LabelEncoder for 'family' feature
 label_encoder = LabelEncoder()
-label_encoder.classes_ = pd.read_csv('./train.csv')['family'].unique()
+label_encoder.classes_ = ['BABY CARE' 'BEAUTY' 'BEVERAGES' 'BOOKS' 'BREAD/BAKERY' 'CELEBRATION'
+ 'DAIRY' 'DELI' 'EGGS' 'FROZEN FOODS' 'GROCERY II' 'HOME AND KITCHEN I'
+ 'HOME AND KITCHEN II' 'HOME APPLIANCES' 'LADIESWEAR' 'LAWN AND GARDEN'
+ 'LINGERIE' 'LIQUOR,WINE,BEER' 'MAGAZINES' 'MEATS' 'PERSONAL CARE'
+ 'PET SUPPLIES' 'PLAYERS AND ELECTRONICS' 'POULTRY' 'PREPARED FOODS'
+ 'PRODUCE' 'SEAFOOD' 'AUTOMOTIVE' 'CLEANING' 'GROCERY I' 'HARDWARE'
+ 'SCHOOL AND OFFICE SUPPLIES' 'HOME CARE']
 
 # Create the Streamlit app
 st.title("Sales Prediction App")
